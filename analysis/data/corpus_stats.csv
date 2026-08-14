@@ -1,0 +1,13 @@
+source,split,n_articles,n_chars,n_words
+Gigaword,eval_random,11403,25904666,4286850
+Gigaword,train,3818858,8757037722,1449747635
+News,eval_random,20107,58567177,9341801
+News,eval_temporal,72882,207651676,32781049
+News,train,6718229,19544388310,3116015968
+Organization,eval_random,1807,7067846,1098686
+Organization,eval_temporal,828,6133062,925830
+Organization,train,593470,2292232873,355820504
+UTDstory,eval_random,2725,7055386,1153511
+UTDstory,train,936888,2443730393,399653987
+Wikipedia,eval_random,2120,7844902,1229019
+Wikipedia,train,703878,2728691293,427825161

@@ -1,0 +1,7 @@
+config,model,seq_len,mode,bsz,n_docs,windows_per_doc,median_sec,docs_per_sec,gpu_hours_per_million_docs
+ConfliBERT-2021-trunc512,eventdata-utd/ConfliBERT-scr-uncased,512,truncate,32,5028,1.0,6.29,798.84,0.35
+ConfliBERT-2021-slide512,eventdata-utd/ConfliBERT-scr-uncased,512,sliding,32,5028,2.091,14.6,344.35,0.81
+ConfliBERT-v2-512,outputs/models/conflibert-v2-wsd,512,truncate,32,5028,1.0,13.25,379.54,0.73
+ConfliBERT-v2-1024,outputs/models/conflibert-v2-wsd,1024,truncate,16,5028,1.0,30.38,165.48,1.68
+ConfliBERT-v2-2048,outputs/models/conflibert-v2-wsd,2048,truncate,8,5028,1.0,56.48,89.02,3.12
+ModernBERT-base-2048,answerdotai/ModernBERT-base,2048,truncate,8,5028,1.0,56.89,88.39,3.14

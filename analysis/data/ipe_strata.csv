@@ -1,0 +1,13 @@
+config,stratum,n_doc_labels,recall_mean,recall_sd
+ConfliBERT-2021-win@win512,evidence_within_512,791,0.8222,0.0125
+ConfliBERT-2021-win@win512,evidence_beyond_512,48,0.7222,0.0524
+ConfliBERT-2021@512,evidence_within_512,791,0.8095,0.0151
+ConfliBERT-2021@512,evidence_beyond_512,48,0.2292,0.0208
+ConfliBERT-v2@2048,evidence_within_512,791,0.7552,0.0235
+ConfliBERT-v2@2048,evidence_beyond_512,48,0.5556,0.0867
+ConfliBERT-v2@512,evidence_within_512,791,0.7181,0.031
+ConfliBERT-v2@512,evidence_beyond_512,48,0.1806,0.0434
+GPT-5.6,evidence_within_512,791,0.8255,0.0
+GPT-5.6,evidence_beyond_512,48,0.6458,0.0
+ModernBERT-base@2048,evidence_within_512,791,0.7206,0.0254
+ModernBERT-base@2048,evidence_beyond_512,48,0.5417,0.0908

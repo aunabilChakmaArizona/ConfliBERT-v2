@@ -1,0 +1,53 @@
+term,words,modernbert_tokens,conflibert_tokens
+militants,1,3,1
+insurgents,1,3,1
+paramilitary,1,3,1
+cantonment,1,3,2
+counterinsurgency,1,4,1
+improvised explosive device,3,5,3
+IED,1,1,1
+VBIED,1,3,3
+RPG,1,2,2
+mortar,1,2,1
+airstrike,1,3,1
+ceasefire,1,3,1
+insurgency,1,3,1
+jihadist,1,3,1
+caliphate,1,3,1
+peacekeepers,1,2,1
+displacement,1,2,1
+refugees,1,3,1
+atrocities,1,3,1
+genocide,1,2,1
+ethnic cleansing,2,3,2
+assassination,1,3,1
+kidnapping,1,3,1
+hostage,1,2,1
+beheading,1,2,1
+suicide bomber,2,3,2
+Hezbollah,1,2,1
+Hamas,1,2,1
+Taliban,1,2,1
+al-Qaeda,1,3,3
+Boko Haram,2,4,2
+Al-Shabaab,1,5,3
+Jaish-e-Mohammed,1,7,5
+Lashkar-e-Taiba,1,8,5
+peshmerga,1,4,1
+junta,1,2,1
+coup,1,2,1
+secessionist,1,3,1
+belligerents,1,4,2
+combatants,1,3,1
+demobilization,1,3,2
+disarmament,1,3,1
+reconciliation,1,3,1
+war crimes,2,2,2
+shelling,1,2,1
+artillery,1,2,1
+checkpoint,1,2,1
+curfew,1,2,1
+martyrdom,1,3,1
+cadre,1,2,1
+exfiltration,1,3,5
+reconnaissance,1,3,1

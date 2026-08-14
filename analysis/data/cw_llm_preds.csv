@@ -1,0 +1,512 @@
+model,split,country,year,month,gold,pred,parse_error,input_tokens,output_tokens
+openai/gpt-5.6-luna,dev,Cameroon,2025,1,unchanged,unchanged,0,2228,136
+openai/gpt-5.6-luna,dev,Cameroon,2025,2,unchanged,deteriorated,0,2229,56
+openai/gpt-5.6-luna,dev,Cameroon,2025,2,unchanged,deteriorated,0,2198,65
+openai/gpt-5.6-luna,dev,Cameroon,2025,3,unchanged,deteriorated,0,2186,44
+openai/gpt-5.6-luna,test,Cameroon,2025,7,unchanged,deteriorated,0,1178,74
+openai/gpt-5.6-luna,test,Cameroon,2025,12,unchanged,unchanged,0,663,97
+openai/gpt-5.6-luna,dev,Chad,2025,1,unchanged,deteriorated,0,2175,51
+openai/gpt-5.6-luna,dev,Chad,2025,2,unchanged,deteriorated,0,2150,52
+openai/gpt-5.6-luna,dev,Chad,2025,3,unchanged,deteriorated,0,2105,12
+openai/gpt-5.6-luna,test,Chad,2025,7,unchanged,deteriorated,0,1097,54
+openai/gpt-5.6-luna,test,Chad,2025,10,deteriorated,deteriorated,0,1126,12
+openai/gpt-5.6-luna,test,Chad,2025,12,unchanged,deteriorated,0,1128,48
+openai/gpt-5.6-luna,dev,Gabon,2025,1,unchanged,deteriorated,0,433,55
+openai/gpt-5.6-luna,dev,Gabon,2025,3,unchanged,deteriorated,0,297,45
+openai/gpt-5.6-luna,dev,Kenya,2025,1,unchanged,deteriorated,0,1725,53
+openai/gpt-5.6-luna,dev,Kenya,2025,2,unchanged,deteriorated,0,1783,53
+openai/gpt-5.6-luna,dev,Kenya,2025,2,unchanged,unchanged,0,1843,189
+openai/gpt-5.6-luna,dev,Kenya,2025,3,unchanged,unchanged,0,1842,136
+openai/gpt-5.6-luna,test,Kenya,2025,7,deteriorated,deteriorated,0,1030,59
+openai/gpt-5.6-luna,test,Kenya,2025,10,unchanged,improved,0,1083,367
+openai/gpt-5.6-luna,test,Kenya,2025,12,unchanged,deteriorated,0,985,211
+openai/gpt-5.6-luna,dev,Mozambique,2025,1,improved,improved,0,1526,44
+openai/gpt-5.6-luna,dev,Mozambique,2025,2,unchanged,deteriorated,0,1118,55
+openai/gpt-5.6-luna,dev,Mozambique,2025,2,unchanged,deteriorated,0,1616,52
+openai/gpt-5.6-luna,dev,Mozambique,2025,3,improved,improved,0,2078,42
+openai/gpt-5.6-luna,test,Mozambique,2025,7,unchanged,deteriorated,0,1065,49
+openai/gpt-5.6-luna,test,Mozambique,2025,10,unchanged,deteriorated,0,1039,54
+openai/gpt-5.6-luna,test,Mozambique,2025,12,unchanged,deteriorated,0,1066,49
+openai/gpt-5.6-luna,dev,Tanzania,2025,1,unchanged,unchanged,0,1246,11
+openai/gpt-5.6-luna,dev,Tanzania,2025,2,unchanged,deteriorated,0,1165,68
+openai/gpt-5.6-luna,dev,Tanzania,2025,2,unchanged,unchanged,0,969,29
+openai/gpt-5.6-luna,dev,Tanzania,2025,3,unchanged,unchanged,0,1145,52
+openai/gpt-5.6-luna,test,Tanzania,2025,7,unchanged,deteriorated,0,953,42
+openai/gpt-5.6-luna,test,Tanzania,2025,12,unchanged,unchanged,0,538,101
+openai/gpt-5.6-luna,dev,Zimbabwe,2025,1,unchanged,deteriorated,0,1566,68
+openai/gpt-5.6-luna,dev,Zimbabwe,2025,2,unchanged,deteriorated,0,1631,42
+openai/gpt-5.6-luna,dev,Zimbabwe,2025,2,unchanged,unchanged,0,1608,31
+openai/gpt-5.6-luna,dev,Zimbabwe,2025,3,deteriorated,deteriorated,0,1788,12
+openai/gpt-5.6-luna,test,Zimbabwe,2025,7,unchanged,unchanged,0,1115,76
+openai/gpt-5.6-luna,test,Zimbabwe,2025,10,unchanged,deteriorated,0,1087,52
+openai/gpt-5.6-luna,test,Zimbabwe,2025,12,unchanged,unchanged,0,967,52
+openai/gpt-5.6-luna,test,Burundi,2025,7,unchanged,deteriorated,0,557,109
+openai/gpt-5.6-luna,test,Burundi,2025,10,unchanged,deteriorated,0,971,57
+openai/gpt-5.6-luna,test,DR Congo,2025,10,unchanged,unchanged,0,697,93
+openai/gpt-5.6-luna,test,DR Congo,2025,12,deteriorated,deteriorated,0,1233,36
+openai/gpt-5.6-luna,dev,Rwanda,2025,2,unchanged,deteriorated,0,1282,47
+openai/gpt-5.6-luna,dev,Rwanda,2025,2,unchanged,deteriorated,0,1757,69
+openai/gpt-5.6-luna,dev,Rwanda,2025,3,unchanged,improved,0,1886,63
+openai/gpt-5.6-luna,test,Rwanda,2025,7,unchanged,improved,0,802,44
+openai/gpt-5.6-luna,test,Rwanda,2025,10,unchanged,deteriorated,0,667,93
+openai/gpt-5.6-luna,test,Rwanda,2025,12,unchanged,deteriorated,0,873,40
+openai/gpt-5.6-luna,dev,Uganda,2025,1,unchanged,deteriorated,0,1991,53
+openai/gpt-5.6-luna,dev,Uganda,2025,2,unchanged,deteriorated,0,2071,46
+openai/gpt-5.6-luna,dev,Uganda,2025,2,unchanged,deteriorated,0,2116,49
+openai/gpt-5.6-luna,dev,Uganda,2025,3,unchanged,deteriorated,0,2124,45
+openai/gpt-5.6-luna,test,Uganda,2025,7,unchanged,deteriorated,0,1112,57
+openai/gpt-5.6-luna,test,Uganda,2025,10,unchanged,deteriorated,0,1078,128
+openai/gpt-5.6-luna,dev,Eritrea,2025,1,unchanged,unchanged,0,1066,130
+openai/gpt-5.6-luna,dev,Eritrea,2025,2,unchanged,deteriorated,0,1054,41
+openai/gpt-5.6-luna,dev,Eritrea,2025,2,unchanged,deteriorated,0,1056,39
+openai/gpt-5.6-luna,test,Eritrea,2025,7,unchanged,unchanged,0,342,10
+openai/gpt-5.6-luna,test,Eritrea,2025,10,unchanged,deteriorated,0,704,53
+openai/gpt-5.6-luna,test,Eritrea,2025,12,unchanged,unchanged,0,776,62
+openai/gpt-5.6-luna,dev,Ethiopia,2025,1,unchanged,deteriorated,0,2193,56
+openai/gpt-5.6-luna,dev,Ethiopia,2025,2,unchanged,improved,0,2198,68
+openai/gpt-5.6-luna,dev,Ethiopia,2025,2,unchanged,unchanged,0,2194,34
+openai/gpt-5.6-luna,test,Ethiopia,2025,7,unchanged,deteriorated,0,674,77
+openai/gpt-5.6-luna,test,Ethiopia,2025,10,unchanged,deteriorated,0,1203,44
+openai/gpt-5.6-luna,test,Ethiopia,2025,12,deteriorated,deteriorated,0,1156,60
+openai/gpt-5.6-luna,test,Nile Waters,2025,7,unchanged,deteriorated,0,240,85
+openai/gpt-5.6-luna,test,Nile Waters,2025,10,unchanged,deteriorated,0,514,45
+openai/gpt-5.6-luna,test,Nile Waters,2025,12,unchanged,unchanged,0,627,58
+openai/gpt-5.6-luna,dev,Somalia,2025,1,unchanged,improved,0,2109,118
+openai/gpt-5.6-luna,dev,Somalia,2025,2,unchanged,deteriorated,0,2185,69
+openai/gpt-5.6-luna,dev,Somalia,2025,2,unchanged,deteriorated,0,2241,89
+openai/gpt-5.6-luna,dev,Somalia,2025,3,unchanged,deteriorated,0,2292,12
+openai/gpt-5.6-luna,test,Somalia,2025,7,deteriorated,deteriorated,0,1221,12
+openai/gpt-5.6-luna,test,Somalia,2025,10,unchanged,deteriorated,0,1204,43
+openai/gpt-5.6-luna,test,Somalia,2025,12,unchanged,improved,0,1165,68
+openai/gpt-5.6-luna,dev,Somaliland,2025,1,unchanged,deteriorated,0,1146,12
+openai/gpt-5.6-luna,dev,Somaliland,2025,2,unchanged,improved,0,1163,57
+openai/gpt-5.6-luna,dev,Somaliland,2025,2,unchanged,unchanged,0,1248,10
+openai/gpt-5.6-luna,dev,Somaliland,2025,3,unchanged,deteriorated,0,1162,45
+openai/gpt-5.6-luna,test,Somaliland,2025,7,unchanged,improved,0,615,117
+openai/gpt-5.6-luna,test,Somaliland,2025,10,unchanged,unchanged,0,735,68
+openai/gpt-5.6-luna,test,Somaliland,2025,12,unchanged,deteriorated,0,916,12
+openai/gpt-5.6-luna,dev,South Sudan,2025,1,unchanged,deteriorated,0,2038,58
+openai/gpt-5.6-luna,dev,South Sudan,2025,2,unchanged,deteriorated,0,2051,12
+openai/gpt-5.6-luna,dev,South Sudan,2025,2,unchanged,unchanged,0,2055,28
+openai/gpt-5.6-luna,test,South Sudan,2025,7,unchanged,deteriorated,0,644,100
+openai/gpt-5.6-luna,test,South Sudan,2025,10,unchanged,deteriorated,0,1163,51
+openai/gpt-5.6-luna,test,South Sudan,2025,12,unchanged,deteriorated,0,1187,59
+openai/gpt-5.6-luna,dev,Sudan,2025,2,deteriorated,deteriorated,0,1643,48
+openai/gpt-5.6-luna,dev,Sudan,2025,2,deteriorated,unchanged,0,2140,30
+openai/gpt-5.6-luna,dev,Sudan,2025,3,unchanged,improved,0,2102,86
+openai/gpt-5.6-luna,test,Sudan,2025,7,unchanged,deteriorated,0,1147,42
+openai/gpt-5.6-luna,test,Sudan,2025,12,unchanged,deteriorated,0,621,76
+openai/gpt-5.6-luna,dev,Burkina Faso,2025,1,unchanged,deteriorated,0,2178,50
+openai/gpt-5.6-luna,dev,Burkina Faso,2025,2,unchanged,deteriorated,0,2125,12
+openai/gpt-5.6-luna,dev,Burkina Faso,2025,2,unchanged,deteriorated,0,2117,12
+openai/gpt-5.6-luna,dev,Burkina Faso,2025,3,deteriorated,deteriorated,0,2140,12
+openai/gpt-5.6-luna,test,Burkina Faso,2025,7,unchanged,deteriorated,0,1222,42
+openai/gpt-5.6-luna,test,Burkina Faso,2025,10,unchanged,deteriorated,0,1135,89
+openai/gpt-5.6-luna,test,Burkina Faso,2025,12,unchanged,deteriorated,0,1105,118
+openai/gpt-5.6-luna,dev,Guinea,2025,1,unchanged,deteriorated,0,1752,49
+openai/gpt-5.6-luna,dev,Guinea,2025,2,unchanged,deteriorated,0,1350,72
+openai/gpt-5.6-luna,dev,Guinea,2025,2,unchanged,deteriorated,0,1799,133
+openai/gpt-5.6-luna,dev,Guinea,2025,3,unchanged,deteriorated,0,1860,52
+openai/gpt-5.6-luna,test,Guinea,2025,7,unchanged,deteriorated,0,887,59
+openai/gpt-5.6-luna,test,Guinea,2025,10,unchanged,deteriorated,0,752,47
+openai/gpt-5.6-luna,test,Guinea,2025,12,unchanged,unchanged,0,895,102
+openai/gpt-5.6-luna,dev,Nigeria,2025,1,unchanged,unchanged,0,2285,196
+openai/gpt-5.6-luna,dev,Nigeria,2025,2,unchanged,deteriorated,0,2282,54
+openai/gpt-5.6-luna,dev,Nigeria,2025,2,unchanged,unchanged,0,2246,29
+openai/gpt-5.6-luna,dev,Nigeria,2025,3,unchanged,deteriorated,0,2243,42
+openai/gpt-5.6-luna,test,Nigeria,2025,7,unchanged,deteriorated,0,1208,61
+openai/gpt-5.6-luna,test,Nigeria,2025,10,unchanged,deteriorated,0,1154,63
+openai/gpt-5.6-luna,test,Nigeria,2025,12,unchanged,deteriorated,0,1133,12
+openai/gpt-5.6-luna,dev,Senegal,2025,2,unchanged,improved,0,388,10
+openai/gpt-5.6-luna,dev,Senegal,2025,2,unchanged,unchanged,0,642,125
+openai/gpt-5.6-luna,dev,Kosovo,2025,1,unchanged,deteriorated,0,1352,45
+openai/gpt-5.6-luna,dev,Kosovo,2025,2,unchanged,unchanged,0,1336,134
+openai/gpt-5.6-luna,dev,Kosovo,2025,3,unchanged,improved,0,1343,108
+openai/gpt-5.6-luna,test,Kosovo,2025,7,unchanged,deteriorated,0,712,42
+openai/gpt-5.6-luna,test,Kosovo,2025,10,unchanged,unchanged,0,700,108
+openai/gpt-5.6-luna,test,Kosovo,2025,12,unchanged,improved,0,713,10
+openai/gpt-5.6-luna,test,Kosovo,2026,3,unchanged,deteriorated,0,756,53
+openai/gpt-5.6-luna,dev,Armenia,2025,1,unchanged,deteriorated,0,1783,61
+openai/gpt-5.6-luna,dev,Armenia,2025,2,unchanged,unchanged,0,1347,95
+openai/gpt-5.6-luna,dev,Armenia,2025,3,unchanged,improved,0,1805,76
+openai/gpt-5.6-luna,test,Armenia,2025,7,unchanged,improved,0,1052,92
+openai/gpt-5.6-luna,test,Armenia,2025,10,unchanged,improved,0,1031,49
+openai/gpt-5.6-luna,test,Armenia,2025,12,unchanged,improved,0,980,10
+openai/gpt-5.6-luna,test,Armenia,2026,3,unchanged,deteriorated,0,954,74
+openai/gpt-5.6-luna,dev,Azerbaijan,2025,1,unchanged,deteriorated,0,1775,70
+openai/gpt-5.6-luna,dev,Azerbaijan,2025,2,unchanged,unchanged,0,1424,97
+openai/gpt-5.6-luna,dev,Azerbaijan,2025,3,unchanged,improved,0,1860,54
+openai/gpt-5.6-luna,test,Azerbaijan,2025,7,unchanged,improved,0,1008,86
+openai/gpt-5.6-luna,test,Azerbaijan,2025,10,unchanged,improved,0,950,10
+openai/gpt-5.6-luna,test,Azerbaijan,2025,12,unchanged,unchanged,0,913,73
+openai/gpt-5.6-luna,test,Azerbaijan,2026,3,unchanged,unchanged,0,1006,168
+openai/gpt-5.6-luna,dev,Georgia,2025,1,unchanged,deteriorated,0,843,60
+openai/gpt-5.6-luna,dev,Georgia,2025,2,unchanged,improved,0,1323,10
+openai/gpt-5.6-luna,dev,Georgia,2025,3,unchanged,unchanged,0,1335,150
+openai/gpt-5.6-luna,test,Georgia,2025,7,unchanged,deteriorated,0,970,41
+openai/gpt-5.6-luna,test,Georgia,2025,10,unchanged,deteriorated,0,915,12
+openai/gpt-5.6-luna,test,Georgia,2025,12,unchanged,unchanged,0,857,71
+openai/gpt-5.6-luna,test,Georgia,2026,3,unchanged,deteriorated,0,857,40
+openai/gpt-5.6-luna,dev,Belarus,2025,1,unchanged,deteriorated,0,1372,12
+openai/gpt-5.6-luna,dev,Belarus,2025,2,unchanged,improved,0,1346,121
+openai/gpt-5.6-luna,dev,Belarus,2025,3,unchanged,unchanged,0,1310,10
+openai/gpt-5.6-luna,test,Belarus,2025,7,unchanged,deteriorated,0,718,54
+openai/gpt-5.6-luna,test,Belarus,2025,10,unchanged,deteriorated,0,697,47
+openai/gpt-5.6-luna,test,Belarus,2025,12,unchanged,unchanged,0,658,128
+openai/gpt-5.6-luna,test,Belarus,2026,3,unchanged,improved,0,696,59
+openai/gpt-5.6-luna,dev,Ukraine,2025,1,unchanged,deteriorated,0,2124,77
+openai/gpt-5.6-luna,dev,Ukraine,2025,2,unchanged,deteriorated,0,2159,124
+openai/gpt-5.6-luna,dev,Ukraine,2025,3,unchanged,deteriorated,0,2111,255
+openai/gpt-5.6-luna,test,Ukraine,2025,12,unchanged,deteriorated,0,617,80
+openai/gpt-5.6-luna,test,Ukraine,2026,3,unchanged,deteriorated,0,1112,51
+openai/gpt-5.6-luna,dev,Cyprus,2025,1,unchanged,unchanged,0,1180,86
+openai/gpt-5.6-luna,dev,Cyprus,2025,2,unchanged,improved,0,1210,195
+openai/gpt-5.6-luna,dev,Cyprus,2025,3,unchanged,improved,0,1304,10
+openai/gpt-5.6-luna,test,Cyprus,2025,7,unchanged,unchanged,0,665,155
+openai/gpt-5.6-luna,test,Cyprus,2025,10,unchanged,improved,0,842,45
+openai/gpt-5.6-luna,test,Cyprus,2025,12,unchanged,unchanged,0,892,83
+openai/gpt-5.6-luna,test,Cyprus,2026,3,unchanged,deteriorated,0,833,48
+openai/gpt-5.6-luna,dev,Türkiye,2025,1,unchanged,unchanged,0,1969,145
+openai/gpt-5.6-luna,dev,Türkiye,2025,3,deteriorated,deteriorated,0,1590,65
+openai/gpt-5.6-luna,test,Türkiye,2025,7,improved,improved,0,1147,50
+openai/gpt-5.6-luna,test,Türkiye,2025,10,unchanged,improved,0,1075,10
+openai/gpt-5.6-luna,test,Türkiye,2025,12,unchanged,deteriorated,0,914,79
+openai/gpt-5.6-luna,test,Türkiye,2026,3,unchanged,unchanged,0,971,10
+openai/gpt-5.6-luna,dev,Kyrgyzstan,2025,1,unchanged,improved,0,1035,97
+openai/gpt-5.6-luna,dev,Kyrgyzstan,2025,2,unchanged,improved,0,1050,40
+openai/gpt-5.6-luna,dev,Kyrgyzstan,2025,3,improved,improved,0,1135,10
+openai/gpt-5.6-luna,test,Kyrgyzstan,2025,7,unchanged,unchanged,0,773,147
+openai/gpt-5.6-luna,test,Kyrgyzstan,2025,10,unchanged,deteriorated,0,756,45
+openai/gpt-5.6-luna,test,Kyrgyzstan,2025,12,unchanged,unchanged,0,693,84
+openai/gpt-5.6-luna,test,Kyrgyzstan,2026,3,unchanged,deteriorated,0,751,70
+openai/gpt-5.6-luna,dev,Tajikistan,2025,1,unchanged,unchanged,0,996,72
+openai/gpt-5.6-luna,dev,Tajikistan,2025,2,unchanged,unchanged,0,1083,188
+openai/gpt-5.6-luna,dev,Tajikistan,2025,3,improved,improved,0,1271,10
+openai/gpt-5.6-luna,test,Tajikistan,2025,7,unchanged,unchanged,0,721,64
+openai/gpt-5.6-luna,test,Tajikistan,2025,10,unchanged,unchanged,0,647,97
+openai/gpt-5.6-luna,test,Tajikistan,2025,12,unchanged,deteriorated,0,752,46
+openai/gpt-5.6-luna,test,Tajikistan,2026,3,unchanged,improved,0,788,52
+openai/gpt-5.6-luna,dev,Uzbekistan,2025,1,unchanged,improved,0,841,10
+openai/gpt-5.6-luna,dev,Uzbekistan,2025,2,unchanged,improved,0,794,10
+openai/gpt-5.6-luna,dev,Uzbekistan,2025,3,unchanged,improved,0,751,36
+openai/gpt-5.6-luna,test,Uzbekistan,2025,7,unchanged,unchanged,0,577,86
+openai/gpt-5.6-luna,test,Uzbekistan,2025,10,unchanged,unchanged,0,655,41
+openai/gpt-5.6-luna,test,Uzbekistan,2025,12,unchanged,unchanged,0,662,80
+openai/gpt-5.6-luna,test,Uzbekistan,2026,3,unchanged,unchanged,0,681,64
+openai/gpt-5.6-luna,dev,Lebanon,2025,1,unchanged,deteriorated,0,643,108
+openai/gpt-5.6-luna,dev,Lebanon,2025,2,unchanged,improved,0,1122,10
+openai/gpt-5.6-luna,dev,Lebanon,2025,3,unchanged,deteriorated,0,1615,47
+openai/gpt-5.6-luna,test,Lebanon,2025,6,unchanged,deteriorated,0,1568,140
+openai/gpt-5.6-luna,test,Lebanon,2025,6,unchanged,unchanged,0,2031,156
+openai/gpt-5.6-luna,test,Lebanon,2025,7,unchanged,deteriorated,0,2027,12
+openai/gpt-5.6-luna,test,Lebanon,2025,10,unchanged,deteriorated,0,2031,65
+openai/gpt-5.6-luna,test,Lebanon,2025,12,unchanged,unchanged,0,1106,137
+openai/gpt-5.6-luna,dev,Syria,2025,1,unchanged,deteriorated,0,1147,50
+openai/gpt-5.6-luna,dev,Syria,2025,2,unchanged,improved,0,1665,10
+openai/gpt-5.6-luna,dev,Syria,2025,3,deteriorated,deteriorated,0,1731,34
+openai/gpt-5.6-luna,test,Syria,2025,6,deteriorated,deteriorated,0,1741,48
+openai/gpt-5.6-luna,test,Syria,2025,6,deteriorated,deteriorated,0,2262,12
+openai/gpt-5.6-luna,test,Syria,2025,7,deteriorated,deteriorated,0,2268,12
+openai/gpt-5.6-luna,test,Syria,2025,10,improved,improved,0,2189,45
+openai/gpt-5.6-luna,test,Syria,2025,12,deteriorated,deteriorated,0,1145,12
+openai/gpt-5.6-luna,dev,Iran,2025,1,unchanged,unchanged,0,1144,148
+openai/gpt-5.6-luna,dev,Iran,2025,2,unchanged,deteriorated,0,1656,42
+openai/gpt-5.6-luna,dev,Iran,2025,3,unchanged,deteriorated,0,2162,12
+openai/gpt-5.6-luna,test,Iran,2025,7,unchanged,deteriorated,0,1158,48
+openai/gpt-5.6-luna,test,Iran,2025,10,unchanged,deteriorated,0,1150,49
+openai/gpt-5.6-luna,test,Iran,2025,12,deteriorated,deteriorated,0,1124,12
+openai/gpt-5.6-luna,dev,Iraq,2025,1,unchanged,unchanged,0,1622,122
+openai/gpt-5.6-luna,dev,Iraq,2025,2,unchanged,improved,0,2127,74
+openai/gpt-5.6-luna,dev,Iraq,2025,3,unchanged,deteriorated,0,2175,94
+openai/gpt-5.6-luna,test,Iraq,2025,6,unchanged,deteriorated,0,1657,44
+openai/gpt-5.6-luna,test,Iraq,2025,6,unchanged,deteriorated,0,2148,45
+openai/gpt-5.6-luna,test,Iraq,2025,7,unchanged,unchanged,0,2143,10
+openai/gpt-5.6-luna,test,Iraq,2025,10,unchanged,deteriorated,0,2160,117
+openai/gpt-5.6-luna,test,Iraq,2025,12,unchanged,improved,0,1037,10
+openai/gpt-5.6-luna,dev,Saudi Arabia,2025,1,unchanged,unchanged,0,1408,59
+openai/gpt-5.6-luna,dev,Saudi Arabia,2025,2,unchanged,unchanged,0,1373,70
+openai/gpt-5.6-luna,dev,Saudi Arabia,2025,3,unchanged,deteriorated,0,1343,12
+openai/gpt-5.6-luna,test,Saudi Arabia,2025,6,unchanged,deteriorated,0,1116,47
+openai/gpt-5.6-luna,test,Saudi Arabia,2025,6,unchanged,deteriorated,0,1505,46
+openai/gpt-5.6-luna,test,Saudi Arabia,2025,7,unchanged,improved,0,1529,87
+openai/gpt-5.6-luna,test,Saudi Arabia,2025,10,unchanged,deteriorated,0,1516,131
+openai/gpt-5.6-luna,test,Saudi Arabia,2025,12,unchanged,deteriorated,0,708,12
+openai/gpt-5.6-luna,test,Yemen,2025,6,unchanged,deteriorated,0,678,92
+openai/gpt-5.6-luna,test,Yemen,2025,6,unchanged,unchanged,0,1223,37
+openai/gpt-5.6-luna,test,Yemen,2025,7,deteriorated,deteriorated,0,1790,38
+openai/gpt-5.6-luna,dev,Algeria,2025,1,unchanged,deteriorated,0,1841,54
+openai/gpt-5.6-luna,dev,Algeria,2025,2,unchanged,deteriorated,0,1843,41
+openai/gpt-5.6-luna,dev,Algeria,2025,3,unchanged,improved,0,1937,10
+openai/gpt-5.6-luna,test,Algeria,2025,6,unchanged,deteriorated,0,1280,46
+openai/gpt-5.6-luna,test,Algeria,2025,6,unchanged,unchanged,0,1579,31
+openai/gpt-5.6-luna,test,Algeria,2025,7,unchanged,deteriorated,0,1477,51
+openai/gpt-5.6-luna,test,Algeria,2025,10,unchanged,deteriorated,0,1466,58
+openai/gpt-5.6-luna,test,Algeria,2025,12,unchanged,deteriorated,0,937,50
+openai/gpt-5.6-luna,dev,Egypt,2025,1,unchanged,improved,0,1739,62
+openai/gpt-5.6-luna,dev,Egypt,2025,2,unchanged,unchanged,0,1726,92
+openai/gpt-5.6-luna,dev,Egypt,2025,3,unchanged,deteriorated,0,1824,61
+openai/gpt-5.6-luna,test,Egypt,2025,6,unchanged,unchanged,0,1423,54
+openai/gpt-5.6-luna,test,Egypt,2025,6,unchanged,unchanged,0,1873,33
+openai/gpt-5.6-luna,test,Egypt,2025,7,unchanged,deteriorated,0,1972,53
+openai/gpt-5.6-luna,test,Egypt,2025,10,unchanged,improved,0,1876,40
+openai/gpt-5.6-luna,test,Egypt,2025,12,unchanged,deteriorated,0,912,131
+openai/gpt-5.6-luna,dev,Libya,2025,1,unchanged,deteriorated,0,2060,65
+openai/gpt-5.6-luna,dev,Libya,2025,2,unchanged,deteriorated,0,2058,68
+openai/gpt-5.6-luna,dev,Libya,2025,3,unchanged,deteriorated,0,2049,46
+openai/gpt-5.6-luna,test,Libya,2025,6,unchanged,deteriorated,0,1554,54
+openai/gpt-5.6-luna,test,Libya,2025,6,unchanged,deteriorated,0,2051,48
+openai/gpt-5.6-luna,test,Libya,2025,7,unchanged,deteriorated,0,2121,56
+openai/gpt-5.6-luna,test,Libya,2025,10,unchanged,unchanged,0,2143,134
+openai/gpt-5.6-luna,test,Libya,2025,12,unchanged,deteriorated,0,1062,143
+openai/gpt-5.6-luna,dev,Tunisia,2025,1,unchanged,unchanged,0,1900,81
+openai/gpt-5.6-luna,dev,Tunisia,2025,2,unchanged,deteriorated,0,1753,49
+openai/gpt-5.6-luna,dev,Tunisia,2025,3,unchanged,deteriorated,0,1726,12
+openai/gpt-5.6-luna,test,Tunisia,2025,6,unchanged,unchanged,0,1393,193
+openai/gpt-5.6-luna,test,Tunisia,2025,6,unchanged,unchanged,0,1865,31
+openai/gpt-5.6-luna,test,Tunisia,2025,7,unchanged,deteriorated,0,1964,46
+openai/gpt-5.6-luna,test,Tunisia,2025,10,unchanged,deteriorated,0,1990,57
+openai/gpt-5.6-luna,test,Tunisia,2025,12,unchanged,deteriorated,0,1042,45
+openai/gpt-5.6-luna,dev,Western Sahara,2025,1,unchanged,deteriorated,0,1124,49
+openai/gpt-5.6-luna,dev,Western Sahara,2025,2,unchanged,deteriorated,0,1292,255
+openai/gpt-5.6-luna,dev,Western Sahara,2025,3,unchanged,unchanged,0,1272,72
+openai/gpt-5.6-luna,test,Western Sahara,2025,6,unchanged,deteriorated,0,955,48
+openai/gpt-5.6-luna,test,Western Sahara,2025,6,unchanged,unchanged,0,1179,28
+openai/gpt-5.6-luna,test,Western Sahara,2025,7,unchanged,unchanged,0,1183,101
+openai/gpt-5.6-luna,test,Western Sahara,2025,10,unchanged,improved,0,1250,142
+openai/gpt-5.6-luna,test,Western Sahara,2025,12,unchanged,improved,0,687,61
+openai/gpt-5.6-luna,dev,Central African Republic,2025,1,unchanged,unchanged,0,2024,103
+openai/gpt-5.6-luna,dev,Central African Republic,2025,2,unchanged,deteriorated,0,2115,53
+openai/gpt-5.6-luna,dev,Central African Republic,2025,2,unchanged,deteriorated,0,2157,54
+openai/gpt-5.6-luna,dev,Central African Republic,2025,3,unchanged,improved,0,2184,190
+openai/gpt-5.6-luna,test,Central African Republic,2025,7,unchanged,unchanged,0,1125,180
+openai/gpt-5.6-luna,test,Central African Republic,2025,10,unchanged,unchanged,0,1153,172
+openai/gpt-5.6-luna,dev,Mali,2025,1,unchanged,deteriorated,0,1690,81
+openai/gpt-5.6-luna,dev,Mali,2025,2,unchanged,deteriorated,0,2194,132
+openai/gpt-5.6-luna,dev,Mali,2025,2,unchanged,unchanged,0,2187,78
+openai/gpt-5.6-luna,dev,Mali,2025,3,unchanged,deteriorated,0,2193,73
+openai/gpt-5.6-luna,test,Mali,2025,7,deteriorated,deteriorated,0,1165,58
+openai/gpt-5.6-luna,test,Mali,2025,12,unchanged,deteriorated,0,631,75
+openai/gpt-5.6-luna,dev,Niger,2025,1,unchanged,improved,0,2121,67
+openai/gpt-5.6-luna,dev,Niger,2025,2,unchanged,deteriorated,0,2086,42
+openai/gpt-5.6-luna,dev,Niger,2025,2,unchanged,deteriorated,0,2100,45
+openai/gpt-5.6-luna,dev,Niger,2025,3,deteriorated,deteriorated,0,2105,48
+openai/gpt-5.6-luna,test,Niger,2025,7,unchanged,improved,0,1116,109
+openai/gpt-5.6-luna,test,Niger,2025,10,unchanged,deteriorated,0,1062,67
+openai/gpt-5.6-luna,test,Niger,2025,12,unchanged,deteriorated,0,1064,48
+openai/gpt-5.6-luna,dev,Benin,2025,1,deteriorated,deteriorated,0,1613,40
+openai/gpt-5.6-luna,dev,Benin,2025,2,unchanged,unchanged,0,1640,166
+openai/gpt-5.6-luna,dev,Benin,2025,2,unchanged,unchanged,0,1662,89
+openai/gpt-5.6-luna,dev,Benin,2025,3,unchanged,unchanged,0,1436,10
+openai/gpt-5.6-luna,test,Benin,2025,7,unchanged,improved,0,629,40
+openai/gpt-5.6-luna,test,Benin,2025,10,unchanged,deteriorated,0,633,40
+openai/gpt-5.6-luna,test,Benin,2025,12,deteriorated,deteriorated,0,880,42
+openai/gpt-5.6-luna,dev,Moldova,2025,1,deteriorated,deteriorated,0,1196,41
+openai/gpt-5.6-luna,dev,Moldova,2025,2,unchanged,unchanged,0,891,74
+openai/gpt-5.6-luna,test,Moldova,2026,3,unchanged,deteriorated,0,308,58
+openai/gpt-5.6-luna,test,Israel/Palestine,2025,12,unchanged,deteriorated,0,609,169
+openai/gpt-5.6-luna,dev,Colombia,2025,2,unchanged,deteriorated,0,1584,41
+openai/gpt-5.6-luna,dev,Colombia,2025,3,unchanged,unchanged,0,1585,10
+openai/gpt-5.6-luna,test,Colombia,2025,7,unchanged,deteriorated,0,1095,46
+openai/gpt-5.6-luna,test,Colombia,2025,10,deteriorated,deteriorated,0,1131,64
+openai/gpt-5.6-luna,test,Colombia,2025,12,unchanged,deteriorated,0,1130,46
+openai/gpt-5.6-luna,dev,Ecuador,2025,1,deteriorated,deteriorated,0,1688,44
+openai/gpt-5.6-luna,dev,Ecuador,2025,2,unchanged,improved,0,1733,212
+openai/gpt-5.6-luna,dev,Ecuador,2025,3,unchanged,unchanged,0,1773,77
+openai/gpt-5.6-luna,test,Ecuador,2025,7,unchanged,unchanged,0,976,93
+openai/gpt-5.6-luna,test,Ecuador,2025,10,unchanged,deteriorated,0,995,224
+openai/gpt-5.6-luna,test,Ecuador,2025,12,unchanged,deteriorated,0,1018,45
+openai/gpt-5.6-luna,dev,Venezuela,2025,1,unchanged,deteriorated,0,1928,52
+openai/gpt-5.6-luna,dev,Venezuela,2025,2,unchanged,unchanged,0,1962,10
+openai/gpt-5.6-luna,dev,Venezuela,2025,3,unchanged,deteriorated,0,1972,83
+openai/gpt-5.6-luna,test,Venezuela,2025,7,unchanged,deteriorated,0,1088,205
+openai/gpt-5.6-luna,dev,El Salvador,2025,1,unchanged,deteriorated,0,1326,92
+openai/gpt-5.6-luna,dev,El Salvador,2025,2,unchanged,deteriorated,0,1295,50
+openai/gpt-5.6-luna,dev,El Salvador,2025,3,unchanged,deteriorated,0,1378,12
+openai/gpt-5.6-luna,test,El Salvador,2025,7,deteriorated,deteriorated,0,917,50
+openai/gpt-5.6-luna,test,El Salvador,2025,10,unchanged,unchanged,0,810,95
+openai/gpt-5.6-luna,test,El Salvador,2025,12,unchanged,deteriorated,0,692,62
+openai/gpt-5.6-luna,test,Honduras,2025,12,deteriorated,deteriorated,0,544,98
+openai/gpt-5.6-luna,dev,Mexico,2025,1,unchanged,unchanged,0,1553,177
+openai/gpt-5.6-luna,dev,Mexico,2025,2,unchanged,deteriorated,0,1552,120
+openai/gpt-5.6-luna,dev,Mexico,2025,3,unchanged,unchanged,0,2070,82
+openai/gpt-5.6-luna,test,Mexico,2025,7,unchanged,deteriorated,0,1139,44
+openai/gpt-5.6-luna,test,Mexico,2025,10,unchanged,deteriorated,0,1123,43
+openai/gpt-5.6-luna,test,Mexico,2025,12,unchanged,deteriorated,0,1121,56
+openai/gpt-5.6-luna,dev,Nicaragua,2025,1,unchanged,deteriorated,0,1173,43
+openai/gpt-5.6-luna,dev,Nicaragua,2025,2,deteriorated,deteriorated,0,1202,39
+openai/gpt-5.6-luna,dev,Nicaragua,2025,3,unchanged,deteriorated,0,1225,12
+openai/gpt-5.6-luna,test,Nicaragua,2025,7,unchanged,deteriorated,0,732,12
+openai/gpt-5.6-luna,test,Nicaragua,2025,10,unchanged,deteriorated,0,774,123
+openai/gpt-5.6-luna,test,Nicaragua,2025,12,unchanged,unchanged,0,697,61
+openai/gpt-5.6-luna,dev,Haiti,2025,1,unchanged,improved,0,1602,188
+openai/gpt-5.6-luna,dev,Haiti,2025,2,unchanged,deteriorated,0,2109,62
+openai/gpt-5.6-luna,dev,Haiti,2025,3,deteriorated,deteriorated,0,2122,46
+openai/gpt-5.6-luna,test,Haiti,2025,7,unchanged,deteriorated,0,1154,53
+openai/gpt-5.6-luna,test,Haiti,2025,10,unchanged,deteriorated,0,1144,53
+openai/gpt-5.6-luna,test,Haiti,2025,12,unchanged,unchanged,0,1111,128
+openai/gpt-5.6-luna,dev,China/Japan,2025,1,unchanged,unchanged,0,1506,84
+openai/gpt-5.6-luna,dev,China/Japan,2025,2,unchanged,unchanged,0,1548,77
+openai/gpt-5.6-luna,dev,China/Japan,2025,3,unchanged,deteriorated,0,1759,64
+openai/gpt-5.6-luna,test,China/Japan,2025,6,unchanged,deteriorated,0,1397,47
+openai/gpt-5.6-luna,test,China/Japan,2025,6,unchanged,deteriorated,0,1838,43
+openai/gpt-5.6-luna,test,China/Japan,2025,7,unchanged,deteriorated,0,1962,96
+openai/gpt-5.6-luna,test,China/Japan,2025,7,unchanged,deteriorated,0,1923,90
+openai/gpt-5.6-luna,test,China/Japan,2025,10,unchanged,unchanged,0,1847,207
+openai/gpt-5.6-luna,test,China/Japan,2025,12,unchanged,deteriorated,0,990,50
+openai/gpt-5.6-luna,dev,Korean Peninsula,2025,1,unchanged,unchanged,0,1914,104
+openai/gpt-5.6-luna,dev,Korean Peninsula,2025,2,unchanged,unchanged,0,1964,255
+openai/gpt-5.6-luna,dev,Korean Peninsula,2025,3,unchanged,unchanged,0,1936,74
+openai/gpt-5.6-luna,test,Korean Peninsula,2025,6,unchanged,improved,0,1580,61
+openai/gpt-5.6-luna,test,Korean Peninsula,2025,6,unchanged,unchanged,0,2127,31
+openai/gpt-5.6-luna,test,Korean Peninsula,2025,7,unchanged,deteriorated,0,2166,130
+openai/gpt-5.6-luna,test,Korean Peninsula,2025,7,unchanged,deteriorated,0,2205,55
+openai/gpt-5.6-luna,test,Korean Peninsula,2025,10,unchanged,deteriorated,0,2153,52
+openai/gpt-5.6-luna,test,Korean Peninsula,2025,12,unchanged,deteriorated,0,1110,59
+openai/gpt-5.6-luna,dev,Taiwan Strait,2025,1,unchanged,unchanged,0,2023,303
+openai/gpt-5.6-luna,dev,Taiwan Strait,2025,2,unchanged,deteriorated,0,2061,55
+openai/gpt-5.6-luna,dev,Taiwan Strait,2025,3,unchanged,deteriorated,0,2086,119
+openai/gpt-5.6-luna,test,Taiwan Strait,2025,6,unchanged,deteriorated,0,1635,55
+openai/gpt-5.6-luna,test,Taiwan Strait,2025,6,unchanged,unchanged,0,2123,29
+openai/gpt-5.6-luna,test,Taiwan Strait,2025,7,unchanged,unchanged,0,2080,101
+openai/gpt-5.6-luna,test,Taiwan Strait,2025,7,unchanged,deteriorated,0,2045,75
+openai/gpt-5.6-luna,test,Taiwan Strait,2025,10,unchanged,unchanged,0,2067,156
+openai/gpt-5.6-luna,test,Taiwan Strait,2025,12,deteriorated,deteriorated,0,1110,42
+openai/gpt-5.6-luna,dev,Afghanistan,2025,1,unchanged,deteriorated,0,2029,60
+openai/gpt-5.6-luna,dev,Afghanistan,2025,2,unchanged,deteriorated,0,2010,43
+openai/gpt-5.6-luna,dev,Afghanistan,2025,3,unchanged,improved,0,2029,97
+openai/gpt-5.6-luna,test,Afghanistan,2025,7,unchanged,deteriorated,0,1107,62
+openai/gpt-5.6-luna,test,Afghanistan,2025,7,unchanged,deteriorated,0,1611,64
+openai/gpt-5.6-luna,test,Afghanistan,2025,12,unchanged,deteriorated,0,586,82
+openai/gpt-5.6-luna,dev,Bangladesh,2025,1,unchanged,unchanged,0,2180,87
+openai/gpt-5.6-luna,dev,Bangladesh,2025,2,unchanged,deteriorated,0,2140,44
+openai/gpt-5.6-luna,dev,Bangladesh,2025,3,unchanged,deteriorated,0,2180,46
+openai/gpt-5.6-luna,test,Bangladesh,2025,6,unchanged,unchanged,0,1626,141
+openai/gpt-5.6-luna,test,Bangladesh,2025,6,unchanged,unchanged,0,2109,30
+openai/gpt-5.6-luna,test,Bangladesh,2025,7,unchanged,deteriorated,0,2112,46
+openai/gpt-5.6-luna,test,Bangladesh,2025,7,unchanged,deteriorated,0,2085,52
+openai/gpt-5.6-luna,test,Bangladesh,2025,10,unchanged,improved,0,2076,52
+openai/gpt-5.6-luna,test,Bangladesh,2025,12,deteriorated,deteriorated,0,1118,12
+openai/gpt-5.6-luna,dev,India,2025,1,unchanged,deteriorated,0,2120,73
+openai/gpt-5.6-luna,dev,India,2025,2,unchanged,deteriorated,0,2104,100
+openai/gpt-5.6-luna,dev,India,2025,3,unchanged,unchanged,0,2102,122
+openai/gpt-5.6-luna,test,India,2025,6,unchanged,deteriorated,0,1645,83
+openai/gpt-5.6-luna,test,India,2025,6,unchanged,unchanged,0,2160,31
+openai/gpt-5.6-luna,test,India,2025,7,unchanged,improved,0,2136,63
+openai/gpt-5.6-luna,test,India,2025,7,unchanged,improved,0,2115,91
+openai/gpt-5.6-luna,test,India,2025,10,improved,improved,0,2138,55
+openai/gpt-5.6-luna,test,India,2025,12,unchanged,deteriorated,0,1192,59
+openai/gpt-5.6-luna,dev,Pakistan,2025,1,unchanged,deteriorated,0,2151,59
+openai/gpt-5.6-luna,dev,Pakistan,2025,2,unchanged,deteriorated,0,2190,12
+openai/gpt-5.6-luna,dev,Pakistan,2025,3,unchanged,deteriorated,0,2237,55
+openai/gpt-5.6-luna,test,Pakistan,2025,6,unchanged,deteriorated,0,1712,103
+openai/gpt-5.6-luna,test,Pakistan,2025,6,unchanged,deteriorated,0,2224,57
+openai/gpt-5.6-luna,test,Pakistan,2025,7,unchanged,deteriorated,0,2217,72
+openai/gpt-5.6-luna,test,Pakistan,2025,7,unchanged,deteriorated,0,2207,53
+openai/gpt-5.6-luna,test,Pakistan,2025,12,unchanged,deteriorated,0,673,98
+openai/gpt-5.6-luna,dev,Sri Lanka,2025,1,unchanged,improved,0,2094,100
+openai/gpt-5.6-luna,dev,Sri Lanka,2025,2,unchanged,deteriorated,0,2069,65
+openai/gpt-5.6-luna,dev,Sri Lanka,2025,3,unchanged,deteriorated,0,2098,53
+openai/gpt-5.6-luna,test,Sri Lanka,2025,6,unchanged,unchanged,0,1608,132
+openai/gpt-5.6-luna,test,Sri Lanka,2025,6,unchanged,unchanged,0,2091,10
+openai/gpt-5.6-luna,test,Sri Lanka,2025,7,unchanged,unchanged,0,2080,80
+openai/gpt-5.6-luna,test,Sri Lanka,2025,7,unchanged,unchanged,0,2085,57
+openai/gpt-5.6-luna,test,Sri Lanka,2025,10,unchanged,unchanged,0,2040,101
+openai/gpt-5.6-luna,test,Sri Lanka,2025,12,unchanged,deteriorated,0,1042,46
+openai/gpt-5.6-luna,dev,Myanmar,2025,1,unchanged,unchanged,0,1609,247
+openai/gpt-5.6-luna,dev,Myanmar,2025,2,unchanged,deteriorated,0,2100,55
+openai/gpt-5.6-luna,dev,Myanmar,2025,3,unchanged,deteriorated,0,2122,47
+openai/gpt-5.6-luna,test,Myanmar,2025,6,unchanged,unchanged,0,1658,90
+openai/gpt-5.6-luna,test,Myanmar,2025,6,unchanged,unchanged,0,2168,30
+openai/gpt-5.6-luna,test,Myanmar,2025,7,unchanged,deteriorated,0,2173,91
+openai/gpt-5.6-luna,test,Myanmar,2025,7,unchanged,deteriorated,0,2145,12
+openai/gpt-5.6-luna,test,Myanmar,2025,10,unchanged,deteriorated,0,2166,60
+openai/gpt-5.6-luna,test,Myanmar,2025,12,unchanged,deteriorated,0,1117,54
+openai/gpt-5.6-luna,dev,Philippines,2025,1,unchanged,deteriorated,0,1690,179
+openai/gpt-5.6-luna,dev,Philippines,2025,2,unchanged,deteriorated,0,1777,84
+openai/gpt-5.6-luna,dev,Philippines,2025,3,unchanged,deteriorated,0,1926,53
+openai/gpt-5.6-luna,test,Philippines,2025,6,unchanged,unchanged,0,1471,76
+openai/gpt-5.6-luna,test,Philippines,2025,6,unchanged,unchanged,0,1881,59
+openai/gpt-5.6-luna,test,Philippines,2025,7,unchanged,unchanged,0,1890,111
+openai/gpt-5.6-luna,test,Philippines,2025,7,unchanged,unchanged,0,1831,74
+openai/gpt-5.6-luna,test,Philippines,2025,10,unchanged,deteriorated,0,1826,53
+openai/gpt-5.6-luna,test,Philippines,2025,12,unchanged,deteriorated,0,855,146
+openai/gpt-5.6-luna,dev,South China Sea,2025,1,unchanged,deteriorated,0,1960,57
+openai/gpt-5.6-luna,dev,South China Sea,2025,2,unchanged,deteriorated,0,1977,59
+openai/gpt-5.6-luna,dev,South China Sea,2025,3,unchanged,unchanged,0,2053,63
+openai/gpt-5.6-luna,test,South China Sea,2025,6,unchanged,unchanged,0,1400,82
+openai/gpt-5.6-luna,test,South China Sea,2025,6,unchanged,unchanged,0,1692,103
+openai/gpt-5.6-luna,test,South China Sea,2025,7,unchanged,deteriorated,0,1691,56
+openai/gpt-5.6-luna,test,South China Sea,2025,7,unchanged,deteriorated,0,1713,12
+openai/gpt-5.6-luna,test,South China Sea,2025,10,unchanged,deteriorated,0,1832,48
+openai/gpt-5.6-luna,test,South China Sea,2025,12,unchanged,deteriorated,0,813,57
+openai/gpt-5.6-luna,dev,Thailand,2025,1,unchanged,deteriorated,0,1834,66
+openai/gpt-5.6-luna,dev,Thailand,2025,2,unchanged,deteriorated,0,1960,53
+openai/gpt-5.6-luna,dev,Thailand,2025,3,unchanged,deteriorated,0,1982,50
+openai/gpt-5.6-luna,test,Thailand,2025,6,deteriorated,deteriorated,0,1666,40
+openai/gpt-5.6-luna,test,Thailand,2025,6,deteriorated,deteriorated,0,2196,49
+openai/gpt-5.6-luna,test,Thailand,2025,7,unchanged,deteriorated,0,2174,96
+openai/gpt-5.6-luna,test,Thailand,2025,7,unchanged,deteriorated,0,2173,53
+openai/gpt-5.6-luna,test,Thailand,2025,10,improved,improved,0,2161,59
+openai/gpt-5.6-luna,test,Thailand,2025,12,unchanged,deteriorated,0,1141,40
+openai/gpt-5.6-luna,test,Guatemala,2025,10,unchanged,deteriorated,0,292,12
+openai/gpt-5.6-luna,dev,Bolivia,2025,1,unchanged,unchanged,0,892,129
+openai/gpt-5.6-luna,dev,Bolivia,2025,2,unchanged,unchanged,0,854,117
+openai/gpt-5.6-luna,test,Bolivia,2025,10,improved,improved,0,356,65
+openai/gpt-5.6-luna,test,Bolivia,2025,12,unchanged,deteriorated,0,613,39
+openai/gpt-5.6-luna,dev,Peru,2025,3,unchanged,deteriorated,0,364,62
+openai/gpt-5.6-luna,test,Peru,2025,10,deteriorated,unchanged,0,331,75
+openai/gpt-5.6-luna,test,Madagascar,2025,10,deteriorated,deteriorated,0,681,57
+openai/gpt-5.6-luna,dev,Guinea-Bissau,2025,2,deteriorated,deteriorated,0,376,79
+openai/gpt-5.6-luna,dev,Guinea-Bissau,2025,2,deteriorated,deteriorated,0,624,114
+openai/gpt-5.6-luna,dev,Guinea-Bissau,2025,3,unchanged,deteriorated,0,893,77
+openai/gpt-5.6-luna,test,Guinea-Bissau,2025,12,unchanged,deteriorated,0,567,165
+openai/gpt-5.6-luna,dev,Guyana,2025,3,unchanged,unchanged,0,267,10
+openai/gpt-5.6-luna,dev,Jordan,2025,2,unchanged,deteriorated,0,776,143
+openai/gpt-5.6-luna,test,Kazakhstan,2026,3,unchanged,unchanged,0,268,63
+openai/gpt-5.6-luna,dev,Togo,2025,2,unchanged,unchanged,0,468,117
+openai/gpt-5.6-luna,dev,Togo,2025,2,unchanged,unchanged,0,648,229
+openai/gpt-5.6-luna,dev,Togo,2025,3,unchanged,deteriorated,0,714,78
+openai/gpt-5.6-luna,test,Togo,2025,7,unchanged,deteriorated,0,709,68
+openai/gpt-5.6-luna,test,Togo,2025,10,unchanged,improved,0,541,95
+openai/gpt-5.6-luna,test,Papua New Guinea,2025,10,unchanged,unchanged,0,279,63
+openai/gpt-5.6-luna,test,Cambodia,2025,7,unchanged,deteriorated,0,440,86
+openai/gpt-5.6-luna,test,Cambodia,2025,7,unchanged,unchanged,0,747,48
+openai/gpt-5.6-luna,test,Brazil,2025,10,unchanged,deteriorated,0,454,12
+openai/gpt-5.6-luna,test,Angola,2025,7,deteriorated,deteriorated,0,286,12
+openai/gpt-5.6-luna,dev,Indonesia,2025,1,unchanged,unchanged,0,1799,156
+openai/gpt-5.6-luna,dev,Indonesia,2025,2,unchanged,deteriorated,0,1859,47
+openai/gpt-5.6-luna,dev,Indonesia,2025,3,unchanged,deteriorated,0,1870,42
+openai/gpt-5.6-luna,test,Indonesia,2025,6,unchanged,unchanged,0,1410,165
+openai/gpt-5.6-luna,test,Indonesia,2025,6,unchanged,improved,0,1753,111
+openai/gpt-5.6-luna,test,Indonesia,2025,7,unchanged,unchanged,0,1701,79
+openai/gpt-5.6-luna,test,Indonesia,2025,7,unchanged,improved,0,1701,138
+openai/gpt-5.6-luna,test,Indonesia,2025,10,unchanged,deteriorated,0,1841,48
+openai/gpt-5.6-luna,test,Indonesia,2025,12,unchanged,improved,0,997,188
+openai/gpt-5.6-luna,test,Ghana,2025,7,unchanged,unchanged,0,250,10
+openai/gpt-5.6-luna,dev,South Africa,2025,1,unchanged,deteriorated,0,1352,52
+openai/gpt-5.6-luna,dev,South Africa,2025,2,unchanged,deteriorated,0,1592,66
+openai/gpt-5.6-luna,dev,South Africa,2025,2,unchanged,unchanged,0,1703,31
+openai/gpt-5.6-luna,dev,South Africa,2025,3,unchanged,deteriorated,0,1768,78
+openai/gpt-5.6-luna,test,South Africa,2025,7,unchanged,unchanged,0,936,167
+openai/gpt-5.6-luna,test,South Africa,2025,10,unchanged,unchanged,0,857,61
+openai/gpt-5.6-luna,test,South Africa,2025,12,unchanged,deteriorated,0,756,44
+openai/gpt-5.6-luna,test,Qatar,2025,6,unchanged,deteriorated,0,417,57
+openai/gpt-5.6-luna,test,Qatar,2025,6,unchanged,unchanged,0,701,24
+openai/gpt-5.6-luna,test,Morocco,2025,10,deteriorated,deteriorated,0,452,84
+openai/gpt-5.6-luna,dev,Comoros Islands,2025,1,unchanged,deteriorated,0,437,12
+openai/gpt-5.6-luna,dev,Russia/U.S.,2025,1,unchanged,deteriorated,0,622,45
+openai/gpt-5.6-luna,dev,Russia/U.S.,2025,2,unchanged,improved,0,601,64
+openai/gpt-5.6-luna,dev,Amazon,2025,1,unchanged,unchanged,0,1245,169
+openai/gpt-5.6-luna,dev,Amazon,2025,2,unchanged,deteriorated,0,1580,99
+openai/gpt-5.6-luna,dev,Amazon,2025,3,unchanged,improved,0,1546,80
+openai/gpt-5.6-luna,test,Amazon,2025,7,deteriorated,deteriorated,0,913,40
+openai/gpt-5.6-luna,test,Amazon,2025,10,unchanged,improved,0,1019,49
+openai/gpt-5.6-luna,test,Amazon,2025,12,unchanged,deteriorated,0,886,66
+openai/gpt-5.6-luna,test,China-U.S.,2025,6,unchanged,improved,0,412,10
+openai/gpt-5.6-luna,test,China-U.S.,2025,6,unchanged,unchanged,0,691,36
+openai/gpt-5.6-luna,test,China-U.S.,2025,10,improved,improved,0,1057,34
+openai/gpt-5.6-luna,test,China-U.S.,2025,12,unchanged,unchanged,0,788,108
+openai/gpt-5.6-luna,dev,Cook Islands,2025,2,unchanged,unchanged,0,421,104
+openai/gpt-5.6-luna,dev,Tasman Sea,2025,2,unchanged,unchanged,0,338,10
+openai/gpt-5.6-luna,test,New Caledonia,2025,7,improved,improved,0,409,10
+openai/gpt-5.6-luna,test,New Caledonia,2025,7,improved,improved,0,685,10

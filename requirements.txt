@@ -1,0 +1,32 @@
+# ConfliBERT-v2 dependency set (mirrors the pilot WSL environment, env/setup_wsl.sh).
+# torch is installed separately with the right CUDA index, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+# (hpc/setup_delta.sh does this for you.)
+
+# core training + eval
+transformers>=4.48
+accelerate
+tokenizers
+safetensors
+huggingface_hub
+peft            # only needed for --lora runs
+tensorboard     # train_dapt --report tensorboard
+
+# data pipeline
+numpy
+pyarrow
+orjson
+ftfy            # corpus extraction text fixing
+pandas
+tqdm
+sentencepiece
+
+# evaluation
+scikit-learn
+seqeval         # NER span F1
+evaluate
+datasets
+
+# task-specific extras
+pypdf           # CrisisWatch PDF parsing
+requests        # LLM API baselines (OpenRouter)

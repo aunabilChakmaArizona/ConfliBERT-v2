@@ -1,0 +1,56 @@
+# ---- secrets: NEVER commit keys ----
+.openrouter_key
+*.key
+*_key
+.env
+.env.*
+hpc/paths.env
+!hpc/paths.env.example
+
+# ---- large artifacts: models, packed token shards, corpora ----
+outputs/
+backups/
+hf/cache/
+*.safetensors
+*.bin
+*.u16
+*.memmap
+*.pt
+*.ckpt
+
+# ---- third-party clones and raw external data (see docs/PIPELINE.md for how to fetch) ----
+external/
+
+# ---- generated analysis artifacts (analysis/data CSVs ARE committed: they are
+#      the experimental record; figures regenerate from them) ----
+analysis/figures/
+analysis/old_figs/
+
+# ---- paper / slides: separate workstream, not part of the code release ----
+paper/
+slides/
+cdx_cw.txt
+
+# ---- python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---- logs, editor, OS ----
+*.log
+logs/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- LaTeX build debris (in case docs ever compile TeX) ----
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz

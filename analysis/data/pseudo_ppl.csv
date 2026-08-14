@@ -1,0 +1,3 @@
+model,path,mlm_loss,pseudo_ppl,n_masked_tokens
+init,outputs/models/modernbert-conflivocab-init,1.76456,5.839,613333
+v2,/root/models/conflibert-v2,1.37757,3.9653,613333

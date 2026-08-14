@@ -1,0 +1,20 @@
+# Normalize line endings. Everything that executes on Linux (Delta, WSL) MUST
+# stay LF even when checked out on Windows.
+* text=auto
+
+*.sh      text eol=lf
+*.sbatch  text eol=lf
+*.py      text eol=lf
+*.R       text eol=lf
+*.env     text eol=lf
+*.example text eol=lf
+*.md      text eol=lf
+*.txt     text eol=lf
+*.csv     text eol=lf
+*.json    text eol=lf
+
+# binaries, just in case any ever get force-added
+*.pdf     binary
+*.png     binary
+*.safetensors binary
+*.u16     binary
