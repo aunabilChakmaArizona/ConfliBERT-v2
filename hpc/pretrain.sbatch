@@ -19,7 +19,8 @@
 # Tunables (export before submitting; defaults reproduce the pilot v2-wsd recipe
 # at the same global batch of 256 blocks/step = ~262k tokens/step @ seqlen 1024):
 #   CB2_RUN        run name                     (default conflibert-v2-hpc)
-#   CB2_BASE       base model or local ckpt dir (default answerdotai/ModernBERT-base)
+#   CB2_BASE       base model or local ckpt dir (default answerdotai/ModernBERT-base;
+#                  for ModernBERT-large also set CB2_BSZ=8, same packs work)
 #   CB2_PACK_TAG   which packed set to train on (default "hpc", see pack_corpus.sbatch)
 #   CB2_LR         peak learning rate           (default 2e-4, WSD)
 #   CB2_SCHED      cosine | wsd                 (default wsd)

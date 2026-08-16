@@ -7,16 +7,37 @@
 [ConfliBERT (2021)](https://github.com/eventdata/ConfliBERT) showed that a
 domain-pretrained encoder beats general-purpose models on conflict-event
 coding, but it inherits BERT's 512-token window and 2019-era architecture.
-ConfliBERT-v2 continues pretraining **ModernBERT-base** (150M params,
-8,192-token native context, 2× inference speed) on a large curated political
-conflict corpus, giving the event-data community a modern, long-context,
-locally fine-tunable foundation.
+ConfliBERT-v2 continues pretraining **ModernBERT** (8,192-token native
+context; the scaled run targets **both sizes**: base, 150M params, and large,
+395M) on a large curated political conflict corpus, giving the event-data
+community a modern, long-context, locally fine-tunable foundation.
 
-This repo contains the **complete pipeline** - corpus extraction, token
+This repo contains the **complete pipeline** - corpus construction, token
 packing, DAPT training, tokenizer surgery, and a 9-task evaluation harness -
 plus ready-to-submit **Slurm jobs for NCSA Delta**, where the scaled-up
 training run happens. Pilot runs (2.5B and 5B tokens, single desktop GPU)
 validated every recipe here; the numbers below tell you what to expect.
+
+---
+
+## ⚠️ Ground rules: read before anything else
+
+This is a multi-team effort. These rules keep it reproducible; every one of
+them exists because breaking it costs someone else a rerun.
+
+1. **Data never enters git**: no corpora, packs, model weights, or logs. Git
+   holds code, docs, and the results CSVs in `analysis/data/`.
+2. **Every corpus source, whatever format it arrives in, converges to the one
+   Parquet schema** in [`docs/PIPELINE.md`](docs/PIPELINE.md), which also has
+   the step-by-step for bringing in a new source (JSONL, CSV, TXT, PDF, ...).
+3. **Names are permanent**: source names and model names key the results
+   record; register a source before first use, never reuse a model name.
+4. **Results CSVs are append-only and committed**; never hand-edited.
+5. **Secrets live in environment variables**, never in files or commits.
+6. **Pack on CPU partitions; GPUs are for training and evaluation only.**
+
+The full contracts: [`docs/PIPELINE.md`](docs/PIPELINE.md). The team workflow:
+[`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ---
 
@@ -112,7 +133,7 @@ LR per task, 3 seeds, prefix-space fix for ByteLevel-BPE NER:
 | v2-wsd (2.5B) | 76.8 | headline DAPT recipe |
 | v2-wsd (5B) | 76.4 | 2× data moved nothing at pilot scale |
 
-Honest summary - v2's measured wins are **CAMEO NER** (75.15 F1 with
+The measured wins for v2 are **CAMEO NER** (75.15 F1 with
 TAPT, best of any model incl. ConfliBERT-2021's 74.0), **precision**, the
 **beyond-512-token stratum** (recall 0.56 vs 0.23 where a 512 window can't see
 the evidence), and **institutional judgment tasks** needing full-document
@@ -121,8 +142,9 @@ context (CrisisWatch). The old "v2 loses NER" result was a harness bug
 [`docs/STATUS_AND_NEXT.md`](docs/STATUS_AND_NEXT.md).
 
 **Why HPC:** at 2.5→5B tokens the curve is flat; literature puts the payoff at
-~20× the pilot budget. That run - bigger corpus, same validated recipe - is
-what `hpc/` exists for.
+~20× the pilot budget. That run - a much bigger corpus, the same validated
+recipe, and both ModernBERT-base and ModernBERT-large - is what `hpc/` exists
+for.
 
 ## Evaluation protocol (the two rules everyone trips on)
 

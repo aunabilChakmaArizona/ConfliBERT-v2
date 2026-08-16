@@ -4,6 +4,23 @@ This document is the team agreement on what each stage consumes and produces.
 If you change a format, a path convention, or a default here, you are changing
 an interface other people's jobs depend on - update this file in the same PR.
 
+## THE RULES (read these before touching anything)
+
+1. **Data never enters git.** Corpora, packs, models, logs: they live on the
+   cluster or the team share. Git holds code, docs, and results CSVs only.
+2. **Every corpus source lands in the same Parquet schema** (below), one
+   subdirectory per source, no matter what format it arrived in. No exceptions,
+   no "temporary" side formats.
+3. **Register a source name before first use** (step-by-step below). Source
+   names are permanent; downstream weights and stats key on them.
+4. **Model names are permanent and unique.** Results CSVs key on the name
+   string; never reuse one for different weights.
+5. **Results CSVs are append-only and committed.** Never hand-edit; delete bad
+   rows in a commit that says why.
+6. **Secrets stay in environment variables.** Never in files, never in git.
+7. **Pack on CPU partitions, train on GPU partitions.** Never burn GPU
+   allocation on tokenization.
+
 ```
 raw archives ──► Stage 1 ──► Parquet corpus ──► Stage 2 ──► packed blocks ──► Stage 3 ──► model ──► Stage 4 ──► results CSVs
               extract_corpus            pack_tokens                train_dapt              eval harnesses
@@ -14,39 +31,84 @@ machine-specific and flow in via CLI args** (locally) **or `hpc/paths.env`**
 (on Delta). Never hardcode an absolute path in a script - thread it through an
 argument or a `CB2_*` variable.
 
-## Stage 0 - raw corpus (input, not in git)
+## Stage 1 - corpus construction (any input format -> one Parquet contract)
 
-The EN-Politics conflict corpus: `*.json.tar.gz` archives of JSONL articles,
-organized as `<corpus-root>/1945-2021 json_files_with_metadata/<source>/...`
-with five source folders: `1.News`, `2.Organization`, `3.Gigaword`,
-`4.UTDstory`, `5.wikipedia`. Ask the team for the share/Globus location; do not
-re-download sources independently.
-
-## Stage 1 - Parquet corpus (`src/data/extract_corpus.py`)
-
-```bash
-python src/data/extract_corpus.py --corpus-root <raw-root> --out <corpus-out> [--workers N]
-```
-
-**Output contract** - one zstd Parquet shard per input archive, laid out as
-`<corpus-out>/parquet/<Source>/<stem>.parquet` where `<Source>` in
-`{News, Organization, Gigaword, UTDstory, Wikipedia}`. Downstream stages infer
-the source from this **parent directory name** - do not flatten the layout.
+The full ConfliBERT-2 corpus combines sources from several teams (the original
+ConfliBERT collection, Arizona's journal and dissertation data, WVU's
+FineWeb-derived and scraped text). Teams bring different file formats; the
+contract is that **everything converges to one Parquet schema**, laid out as
+`<corpus-out>/parquet/<Source>/<shard>.parquet`. Downstream stages infer the
+source from that **parent directory name** - do not flatten the layout.
 
 Row schema (all stages depend on these columns):
 
 | column | meaning |
 |---|---|
-| `id` | stable article id |
+| `id` | stable document id (`<Source>:<file>:<record>`) |
 | `source` | source name, same as the folder |
-| `date`, `year` | publication date |
+| `date`, `year` | publication date (`year = -1` if unknown) |
 | `n_chars`, `n_words` | length metadata |
-| `text` | ftfy-cleaned article text |
-| `text_hash` | exact-dedup key |
+| `text` | ftfy-cleaned document text |
+| `text_hash` | exact-dedup key (blake2b-8 of the cleaned text) |
 | `split` | `train` \| `eval_random` (0.3% random) \| `eval_temporal` (year 2021) |
 
-The script is resumable (skips shards whose output exists). Validate with
-`python src/data/corpus_stats.py --corpus .../parquet --out analysis/data`.
+Splits are assigned deterministically from the text hash and date, identically
+across all sources and ingest scripts, so held-out evaluation stays valid no
+matter who ingested what.
+
+### Adding a new corpus source, step by step
+
+1. **Register the name.** Pick one CamelCase source name (e.g.
+   `ArizonaJournals`) and add it to the source registry below in the same PR
+   that adds the data pipeline for it. Names are permanent.
+2. **Get the raw files into a text interchange format.** Supported directly:
+   `.jsonl`/`.jsonl.gz` (preferred; one JSON object per line), `.json` (array),
+   `.csv`/`.tsv` (header row required), `.txt`/`.txt.gz` (one document per
+   file). Anything binary (PDF, DOCX, WARC) gets a small source-specific
+   converter to JSONL first; `src/data/crisiswatch_parse.py` is a worked PDF
+   example and `pypdf` is already a dependency.
+3. **Ingest.** `src/data/ingest_source.py` applies the same cleaning, hashing,
+   and split logic as the original extractor, whatever the input format:
+
+   ```bash
+   python src/data/ingest_source.py \
+     --source ArizonaJournals \
+     --input /path/to/raw/dump \
+     --out "$CB2_SCRATCH/corpus" \
+     --text-field body --date-field published --id-field doi
+   ```
+
+   The field flags map your column/key names onto the schema. It refuses to
+   run into a non-empty source dir (`--append` to continue an interrupted
+   ingest). Documents under 32 characters are dropped.
+4. **Validate before anyone packs.**
+   `python src/data/corpus_stats.py --corpus <out>/parquet --out analysis/data`
+   and check: document count and total characters match expectations, all
+   three splits are present, and the per-year table looks sane.
+5. **Spot-read a sample.** Open a few rows and look at `text` for mojibake,
+   boilerplate, HTML debris, or truncation. Encoding problems found after
+   packing cost a repack; found here they cost a rerun of one script.
+6. **Commit the paper trail.** The updated `analysis/data/corpus_stats.csv`,
+   the registry row, and any converter script go in the PR. The data itself
+   never does.
+7. **Agree on a source weight.** Packing keeps `weight` fraction of each
+   source (see Stage 2). A new source is invisible to weighted packs until the
+   team adds it to the standard weights, so raise it in the group before the
+   next pack is built.
+
+### Source registry
+
+| source | origin | ingested by |
+|---|---|---|
+| `News`, `Organization`, `Gigaword`, `UTDstory`, `Wikipedia` | original EN-Politics archives (`.json.tar.gz`) | `extract_corpus.py` |
+| Arizona journals + dissertations | planned | `ingest_source.py` (name TBD, register here) |
+| WVU FineWeb + scraped text | planned | `ingest_source.py` (name TBD, register here) |
+
+The original archives live at
+`<corpus-root>/1945-2021 json_files_with_metadata/` on the team share; they are
+processed with `python src/data/extract_corpus.py --corpus-root <raw-root>
+--out <corpus-out>` (resumable; skips shards whose output exists). Ask the team
+for the share/Globus location; do not re-download sources independently.
 
 ## Stage 2 - packed token blocks (`src/data/pack_tokens.py`)
 
@@ -77,6 +139,14 @@ an experiment, not a default - tag the pack accordingly.
 
 Single GPU and `torchrun` DDP both work; see `hpc/pretrain.sbatch` for the
 canonical Delta invocation and `docs/HPC_DELTA.md` for scaling rules.
+
+**Two model sizes are in scope for the scaled run**: `answerdotai/ModernBERT-base`
+(150M params) and `answerdotai/ModernBERT-large` (395M). They share one
+tokenizer, so Stage-2 packs are built once and reused for both; a size is just
+`--base` plus a smaller per-device batch (large: halve `CB2_BSZ`; the launcher
+recomputes accumulation to keep the global batch identical). The pilot recipes
+below were validated on base; treat the first large run as a shakedown, not a
+production run.
 
 **Reference recipes** (pilot-validated; global batch 256 blocks ≈ 262k tokens/step):
 

@@ -30,14 +30,14 @@ pip install torch --index-url https://download.pytorch.org/whl/cu124
 echo "=== project dependencies ==="
 pip install -r requirements.txt
 
-echo "=== pre-download base model + tokenizer into HF_HOME ==="
+echo "=== pre-download base models + tokenizer into HF_HOME (both sizes) ==="
 python - <<'PY'
 import os
 from transformers import AutoModelForMaskedLM, AutoTokenizer
-name = os.environ.get("CB2_TOKENIZER", "answerdotai/ModernBERT-base")
-AutoTokenizer.from_pretrained(name)
-AutoModelForMaskedLM.from_pretrained(name)
-print("cached:", name, "->", os.environ["HF_HOME"])
+for name in ("answerdotai/ModernBERT-base", "answerdotai/ModernBERT-large"):
+    AutoTokenizer.from_pretrained(name)
+    AutoModelForMaskedLM.from_pretrained(name)
+    print("cached:", name, "->", os.environ["HF_HOME"])
 PY
 
 echo "=== smoke test (CPU-only on the login node; GPU is checked in-job) ==="

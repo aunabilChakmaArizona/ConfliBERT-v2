@@ -11,7 +11,7 @@ literature and lays out a concrete, single-GPU fix.
 ## TL;DR recommendation
 
 1. Drop the augmented tokenizer from the headline model. Keep ModernBERT's native tokenizer. The
-   augmented tokenizer stays only as a controlled ablation, reported with the honest efficiency vs
+   augmented tokenizer stays only as a controlled ablation, reported with the measured efficiency vs
    accuracy trade-off below.
 2. Re-run DAPT the ModernBERT-correct way: resume from an Answer.AI pre-decay (stable-phase)
    checkpoint at the stable learning rate, train on conflict data, then apply a short decay phase.
@@ -119,7 +119,7 @@ compute on in-domain MLM with the native tokenizer, done the ModernBERT-correct 
   stable checkpoint is unavailable or awkward to load, fall back to CPT from the final release with a
   short-warmup, stable, then decay schedule rather than a plain cosine.
 - R2 (tokenizer ablation, reframed). Keep the augmented-tokenizer DAPT we already have as the
-  controlled ablation. Report it honestly: the augmented tokenizer buys about 19% fewer tokens on
+  controlled ablation. Report both sides: the augmented tokenizer buys about 19% fewer tokens on
   conflict text (efficiency and a smaller truncation gap) but costs roughly 1 to 2 downstream F1 at
   a 2.5B-token budget, consistent with the approximately 50B-token break-even in the literature.
   This is a genuine, citable contribution, not a failure.

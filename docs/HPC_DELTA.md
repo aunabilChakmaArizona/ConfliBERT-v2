@@ -43,7 +43,10 @@ the schema). It is not in git. Either:
   (`/scratch/<alloc>/$USER/cb2/corpus/parquet`), preserving the
   one-subdirectory-per-source layout, or
 - rebuild it from raw sources with `src/data/extract_corpus.py` (slow; only if
-  you are changing the corpus itself).
+  you are changing the corpus itself), or
+- ingest a NEW team source (any format: JSONL, CSV, TXT, converted PDFs) with
+  `src/data/ingest_source.py`, following the step-by-step in
+  `docs/PIPELINE.md` (register the source name first).
 
 Sanity-check it before burning GPU hours:
 
@@ -77,6 +80,19 @@ one pass over the pack. Override via environment variables at submit time:
 ```bash
 CB2_RUN=v2-hpc-10b CB2_LR=2e-4 CB2_SCHED=wsd bash hpc/submit.sh hpc/pretrain.sbatch
 ```
+
+**ModernBERT-large.** Both model sizes are in scope and share one tokenizer,
+so the same packs feed both. A large run is two overrides:
+
+```bash
+CB2_RUN=conflibert-v2-large CB2_BASE=answerdotai/ModernBERT-large CB2_BSZ=8 \
+  bash hpc/submit.sh hpc/pretrain.sbatch
+```
+
+Halving `CB2_BSZ` keeps large within A100-40G memory at seqlen 1024; the
+script recomputes accumulation so the global batch (and the LR recipe) is
+unchanged. Treat the first large run as a shakedown: the pilot validated the
+recipe on base only.
 
 **Wall clock and resume.** The job requests 24 h. If training does not finish,
 the checkpoint cadence (`--save-steps 500`) plus `--auto-resume` means you just
